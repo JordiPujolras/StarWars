@@ -99,6 +99,12 @@
                 controllerAs: 'vm'
             })
 
+            .when('/ships', {
+                controller: 'ShipsController',
+                templateUrl: 'ships/ships.view.html',
+                controllerAs: 'vm'
+            })
+
             .otherwise({ redirectTo: '/login' });
     }
 
